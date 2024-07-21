@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PopularCitiesBook</string>
+    <string name="item_image">Image of the city item</string>
+</resources>
