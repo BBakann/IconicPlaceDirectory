@@ -24,7 +24,7 @@ public class InfoActivity extends AppCompatActivity {
             binding.nameText.setText("Name: " + selectedCityMark.name);
             binding.countryText.setText("City: " + selectedCityMark.city);
             binding.imageView.setImageResource(selectedCityMark.image);
-
+            binding.infoText.setText("Info:"+selectedCityMark.info);
 
         }
 

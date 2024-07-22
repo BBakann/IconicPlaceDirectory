@@ -7,10 +7,13 @@ public class cityMark implements Serializable {
     String city;
     int image; // her bir görsele birtane integer atandığı için int denir.
 
-    public cityMark(String name, String city, int image){
+    String info;
+
+    public cityMark(String name, String city, int image,String info){
         this.city=city;
         this.name=name;
         this.image= image;
+        this.info=info;
 
     }
 
