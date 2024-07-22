@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        binding = ActivityMainBinding.inflate(getLayoutInflater()); //binding ekledik
         View view = binding.getRoot();
         setContentView(view);
 
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        //Kendi veri girişimiz
+        //Kendi veri girişimiz internetten çekmeden.
         cityMark anitkabir= new cityMark("Anıtkabir","Ankara",R.drawable.anitkabir);
         cityMark egirdir= new cityMark("Eğirdir","Isparta",R.drawable.egirdir);
         cityMark kaleici= new cityMark("Kaleiçi","Antalya",R.drawable.kaleici);
@@ -83,11 +83,6 @@ public class MainActivity extends AppCompatActivity {
         binding.recyclerView.setAdapter(markAdapter);
 
 
-        /*Adapter listView için.
-       // ArrayAdapter arrayAdapter=new ArrayAdapter(this, android.R.layout.simple_list_item_1,
-            //    cityMarkArrayList.stream().map(cityMark -> cityMark.name).collect(Collectors.toList()));
-        binding.listView.setAdapter(arrayAdapter);
-         */
 
         binding.searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
